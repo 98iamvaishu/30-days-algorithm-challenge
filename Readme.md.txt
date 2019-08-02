@@ -16,10 +16,6 @@ Ex : T= "AAAAAAA"
 KMP(Knuth Morris Pratt) Pattern Searching Algorithm:
 It is a linear time algorithm to for pattern matching. KMP algorithm preprocesses pat[] and constructs an auxiliary lps[] of size m (same as size of pattern) which is used to skip characters while matching.
 name lps indicates longest proper prefix which is also suffix.
-Initially j=0 and i=1 lps[]
-lps[0] = 0
-so we continue till i = n
-finally lps becomes = [0, 1, 2, 0, 1, 2, 3]
 
 Time Complexity:
 Best case : Time to create lps + Time to compare lps and text T
